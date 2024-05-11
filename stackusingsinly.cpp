@@ -49,6 +49,12 @@ class Stack {
         }
         else{
             Node* current = top;
+            while (current != NULL) {
+                
+            }
+            {
+                /* code */
+            }
             
         }
 

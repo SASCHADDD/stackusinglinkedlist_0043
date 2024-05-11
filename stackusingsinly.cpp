@@ -35,7 +35,7 @@ class Stack {
         // pop operation: remove the topment element from the stack
         void pop(){
             if (isEmpty()) {
-                    cout << "Stack is empty." endl;
+                    cout << "Stack is empty." << endl;
             }
             cout << "Popped value: " << top->data << endl;
             top = top->next; //update the top pointer to the next node
@@ -64,7 +64,7 @@ class Stack {
 };
 
 int main(){
-    Stack Stack;
+    Stack stack;
 
     int choice = 0;
     int value;
@@ -77,7 +77,36 @@ int main(){
         cout << "Enter your choice: ";
         cin >> choice;
 
-        
+        switch (choice)
+        {
+        case 1:
+        cout << "Entetr the value to push: ";
+        cin >> value;
+        stack.push(value); //push the entered value on to the stack
+            break;
+        case 2:
+            if (!stack.isEmpty())
+            {
+                stack.pop(); // pop the top element from the stack
+            }
+            break;
+        case 3:
+            if (!stack.isEmpty()){
+                stack.peek(); // get the value of the top element
+            }
+            else
+            {
+                cout <<"Stack is empty. No top value." << endl;
+            }
+            break;
+        case 4:
+            cout << "Exiting program." << endl;
+            break;
+        default:
+            cout << "Invalid choice. Try again." << endl;
+            break;
+        }
+        cout << endl;
     }
-    
+    return 0;
 }

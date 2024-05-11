@@ -34,6 +34,8 @@ class Stack {
 
         // pop operation: remove the topment element from the stack
         void pop(){
-            
+            if (isEmpty()) {
+                    cout << "Stack is empty." endl;
+            }
         }
 }

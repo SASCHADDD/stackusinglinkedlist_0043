@@ -43,4 +43,7 @@ class Stack {
         }
 
         //peek/top operation: retrieve the value of the topmost element without removing it
+    void peek(){
+        
+    }
 }

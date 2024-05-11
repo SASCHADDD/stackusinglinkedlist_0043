@@ -31,4 +31,9 @@ class Stack {
             cout << "Push Value: " << value << endl;
             return value;
         }
+
+        // pop operation: remove the topment element from the stack
+        void pop(){
+            
+        }
 }
